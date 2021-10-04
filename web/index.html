@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+  
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
@@ -31,8 +34,22 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '1093269987';
+    var serviceWorkerVersion = '3339659453';
     var scriptLoaded = false;
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+    apiKey: "AIzaSyB3iXx-oA3dQQznICUuokziiH3lpFyDoPA",
+    authDomain: "moodloging.firebaseapp.com",
+    databaseURL: "https://moodloging.firebaseio.com",
+    projectId: "moodloging",
+    storageBucket: "moodloging.appspot.com",
+    messagingSenderId: "291386889663",
+    appId: "1:291386889663:web:88763230c6f04438ca3d0a"
+  };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
     function loadMainDartJs() {
       if (scriptLoaded) {
         return;
@@ -93,6 +110,7 @@
       // Service workers not supported. Just drop the <script> tag.
       loadMainDartJs();
     }
+
   </script>
 </body>
 </html>
