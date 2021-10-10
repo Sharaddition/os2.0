@@ -1,26 +1,41 @@
 function alertMessage(text) {
-    alert(text)
+  alert(text)
 }
 
-function phantomConnect(){
-    window.solana.connect()
+
+async function getAccount() {
+  await window.solana.connect();
+  if (window.solana.isConnected) {
+      console.log("conected");
+  } else {
+      await window.solana.request({ method: "connect" });
+  }
+
+  var finalAddress = await getAddress();
+  
+  console.log(finalAddress);
+  return finalAddress;
 }
 
-function solConnection(){
-    const getProvider = () => {
-        if ("solana" in window) {
-          const provider = window.solana;
-          if (provider.isPhantom) {
-            return provider;
-          }
-        }
-        window.open("https://phantom.app/", "_blank");
-      };
+async function getAddress(){
+  tempWallet = await window.solana.publicKey;
+  finalAdr = String(tempWallet);
+
+  return finalAdr;
 }
 
-window.solana.connect = ()=>{}
 
-window.logger = (flutter_value) => {
-    console.log({ js_context: this, flutter_value });
- }
- 
+async function walletStatus() {
+  return window.solana.isConnected;
+}
+
+
+
+async function disconnectAccount() {
+  await window.solana.disconnect();
+  if (window.solana.isConnected) {
+    window.solana.request({ method: "disconnect" });
+  }
+  window.solana.on('disconnect', () => console.log("disconnected!"))
+}
+

@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "app.js": "101487ee48dd1827c48875de22065e13",
-"assets/AssetManifest.json": "42dfdff5d481f42bb2a81bb453136a3d",
+  "app.js": "647c0df3e2d87231ae9bfab6dca582da",
+"assets/AssetManifest.json": "dd89bac94960f5f6ecf7ca9947b206a8",
 "assets/assets/bg/blur-bg.jpg": "35d5402dca78dfd2e3ee8198543d234b",
 "assets/assets/bg/dynamic.jpg": "4a00137d6cff73deefd993ce9684208b",
 "assets/assets/bg/fractional.jpg": "0fa278d7b19f79adce3cc96e2bbd83ae",
@@ -17,8 +17,10 @@ const RESOURCES = {
 "assets/assets/bg/painter.jpg": "a0af6c20ce44becf4aee953a52b36250",
 "assets/assets/elements/ddegen.png": "8b9107582470db98a8cfb66929b452d1",
 "assets/assets/elements/degen-ape.png": "3da4938522d371d85b9ca094a952de98",
+"assets/assets/elements/hurray.json": "c11a68a2b140d0c3e487c83305308bb8",
 "assets/assets/elements/seprate.png": "2b2cd850dc955b77300adb41371080e8",
 "assets/assets/elements/upload.jpg": "5aac0afbfa4730e26befefa334fc63ec",
+"assets/assets/elements/wait.json": "af50b46c44ec414c0bf4d4ab36c1a4f5",
 "assets/assets/faces/face0.jpg": "5b85d2b8732f54dab309b1b771d39e59",
 "assets/assets/faces/face1.jpg": "1d24fd26cf911f54e2aab689e83feb3d",
 "assets/assets/faces/face10.jpg": "5feed0322715f6e3b33e9a4dcba4b8c2",
@@ -44,7 +46,7 @@ const RESOURCES = {
 "assets/assets/images/treasure.png": "70818817005fd522d423096179bc34cf",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/NOTICES": "0e500564a30d02006da491c8f37db91b",
+"assets/NOTICES": "bc72edf6b50c7cda6010470a94d4a59e",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "3241d1d9c15448a4da96df05f3292ffe",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "eaed33dc9678381a55cb5c13edaf241d",
@@ -53,9 +55,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "a0b0948bed2d48da2fbfb4c97839eda5",
-"/": "a0b0948bed2d48da2fbfb4c97839eda5",
-"main.dart.js": "7f82c3d52f8e2a92506d8fd45a096ae1",
+"index.html": "7ea883b5d6589ec1ae3760b667ca78fd",
+"/": "7ea883b5d6589ec1ae3760b667ca78fd",
+"main.dart.js": "00f0be4039f4f33651743cc358920311",
 "manifest.json": "106eca3c1661f8e93242ee87ff1b3b1a",
 "version.json": "179c0ff7e6af2e3dc8c5635f5fa78089"
 };
