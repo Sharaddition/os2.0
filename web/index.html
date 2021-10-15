@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <!--
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
-  <script src="app.js" defer></script>
+  -->
+  <script defer src="app.js" defer></script>
   
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -32,27 +34,26 @@
 
   <title>volatile</title>
   <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+  <div class="container">
+    <div class="loader"></div>
+  </div>
+
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '2343473756';
+    var serviceWorkerVersion = '2275807772';
     var scriptLoaded = false;
     // Your web app's Firebase configuration
-    const firebaseConfig = {
-    apiKey: "AIzaSyB3iXx-oA3dQQznICUuokziiH3lpFyDoPA",
-    authDomain: "moodloging.firebaseapp.com",
-    databaseURL: "https://moodloging.firebaseio.com",
-    projectId: "moodloging",
-    storageBucket: "moodloging.appspot.com",
-    messagingSenderId: "291386889663",
-    appId: "1:291386889663:web:88763230c6f04438ca3d0a"
-  };
+
 
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+    // firebase.initializeApp(firebaseConfig);
 
     function loadMainDartJs() {
       if (scriptLoaded) {
